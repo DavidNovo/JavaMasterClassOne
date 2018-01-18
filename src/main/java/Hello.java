@@ -25,6 +25,18 @@ public class Hello {
 
     String myString = "Testing the string";
 
+    System.out.println("The length of the string is: "+ myString.length());
+
+    boolean isAlien = false;
+    if (isAlien == false)  {
+      System.out.println("It is not an alien!!");
+    }
+    System.out.println();
+    System.out.println("isAlien = " + isAlien);
+
+
+    // keywords and variables
+    int int2 = 25;
 
   }
 }
