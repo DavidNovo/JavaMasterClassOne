@@ -25,4 +25,12 @@ public class HelloTest {
   @Test
   public void calcualteScore() {
   }
+
+  @Test
+  public void switchStatements() {
+  }
+
+  @Test
+  public void whileControlLoop() {
+  }
 }

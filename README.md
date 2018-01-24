@@ -1,2 +1,4 @@
 # JavaMasterClassOne
-work for the Udemy Java master class
+Class-work for the Udemy Java master class.  This is a long and through course.
+
+  

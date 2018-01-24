@@ -57,15 +57,22 @@ public class Hello {
     calcualteScore(75);
 
     switchStatements();
+
+    // for loop
+    System.out.println("testing for loop");
+    testingForLoop();
+
+    // while loop
+    whileControlLoop();
   }
 
   /**
    * This method calculates a score.
    *
-   * @param gameOver
-   * @param score
-   * @param levelCompleted
-   * @param bonus
+   * @param gameOver when is game over.
+   * @param score the score of the player.
+   * @param levelCompleted the last level the gamer completer.
+   * @param bonus the amout, if any, of the bonus.
    */
   public static void calculateScore(final boolean gameOver, final int score,
                                     final int levelCompleted, final int bonus) {
@@ -79,8 +86,8 @@ public class Hello {
   /**
    * This is an example of method overloading.
    *
-   * @param playerName
-   * @param score
+   * @param playerName name of player.
+   * @param score the score of player.
    */
   public static void calculateScore(String playerName, int score) {
     System.out.println("Player name is " + playerName + " with score" + score);
@@ -89,7 +96,7 @@ public class Hello {
   /**
    * Another example of method overloading.
    *
-   * @param score
+   * @param score score of player
    */
   public static void calcualteScore(int score) {
     System.out.println("The score of the player is " + score);
@@ -135,6 +142,30 @@ public class Hello {
 
     // note using Strings in a switch statement are case-sensetive
     // change all incoming strings to lower case
+
+  }
+
+
+  /**
+   * This method plays with for loop.
+   */
+  private static void testingForLoop() {
+    for (int i = 0; i < 10; i++) {
+      System.out.println("The index is: " + i);
+
+    }
+  }
+
+  /**
+   * This method is showing how to use while and do-while loops.
+   */
+  public static void whileControlLoop() {
+    System.out.println("entering the whileControlLoop");
+    int i = 0;
+    while (i < 10) {
+      System.out.println("The index is: " + i);
+      i++;
+    }
 
   }
 
