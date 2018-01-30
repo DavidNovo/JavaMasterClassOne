@@ -1,14 +1,17 @@
+package net.novogrodsky;
+
 /*
-Hello, set language in File ->Project Structure
+net.novogrodsky.Hello, set language in File ->Project Structure
  */
 public class Hello {
+
   /**
    * This is a class used for testing code from the class.
    *
    * @param args Standard parameter.
    */
   public static void main(String[] args) {
-    System.out.println("Hello World");
+    System.out.println("net.novogrodsky.Hello World");
 
     // the following line has a value that is too large
     // int largeInt = 2_344_987_998;
@@ -22,7 +25,6 @@ public class Hello {
     char myChar = 'T';
     char newChar = '3';
     char testCode = '\u2764';
-
     System.out.println("Test of unicode " + testCode);
 
     String myString = "Testing the string";
@@ -35,7 +37,6 @@ public class Hello {
     }
     System.out.println();
     System.out.println("isAlien = " + isAlien);
-
 
     // keywords and variables
     int int2 = 25;
@@ -75,7 +76,7 @@ public class Hello {
    * @param bonus the amout, if any, of the bonus.
    */
   public static void calculateScore(final boolean gameOver, final int score,
-                                    final int levelCompleted, final int bonus) {
+      final int levelCompleted, final int bonus) {
     if (gameOver) {
       int finalScore = score + (levelCompleted * bonus);
       finalScore += 1000;
@@ -161,13 +162,19 @@ public class Hello {
    */
   public static void whileControlLoop() {
     System.out.println("entering the whileControlLoop");
-    int i = 0;
-    while (i < 10) {
-      System.out.println("The index is: " + i);
-      i++;
+    int number = 0;
+    while (number < 10) {
+      System.out.println("The index is: " + number);
+      number++;
     }
 
   }
 
+  // Section 7 OOP start
+  // Objects have state and behavior
+  // A class is a template for an object.
+  // A class creates a non-primitive data type
+  Car porsche = new Car();
+  Car holden = new Car();
 
 }

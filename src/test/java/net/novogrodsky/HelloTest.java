@@ -1,3 +1,5 @@
+package net.novogrodsky;
+
 import org.junit.Test;
 
 public class HelloTest {
