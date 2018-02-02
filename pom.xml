@@ -4,6 +4,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
+  <!-- The Basics -->
   <groupId>groupId</groupId>
   <artifactId>JavaMasterClassOne</artifactId>
   <version>1.0-SNAPSHOT</version>
@@ -15,25 +16,44 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <!-- Reporting -->
   <reporting>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
+        <configuration>
+          <configLocation>google_checks.xml</configLocation>
+          <encoding>UTF-8</encoding>
+          <consoleOutput>true</consoleOutput>
+          <failsOnError>true</failsOnError>
+          <!-- uncomment the following line if you want to prevent the build -->
+          <!-- <violationSeverity>warning</violationSeverity> -->
+        </configuration>
         <version>3.0.0</version>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <report>checkstyle</report>
+            </reports>
+          </reportSet>
+        </reportSets>
       </plugin>
     </plugins>
   </reporting>
+  <!-- Build Settings -->
   <build>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.3</version>
+        <dependencies>
+        </dependencies>
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
         </configuration>
-        <dependencies></dependencies>
         <executions></executions>
       </plugin>
       <plugin>
@@ -49,7 +69,6 @@
               <encoding>UTF-8</encoding>
               <consoleOutput>true</consoleOutput>
               <failsOnError>true</failsOnError>
-              <linkXRef>false</linkXRef>
               <!-- uncomment the following line if you want to prevent the build -->
               <!-- <violationSeverity>warning</violationSeverity> -->
             </configuration>
@@ -61,5 +80,4 @@
       </plugin>
     </plugins>
   </build>
-
 </project>
