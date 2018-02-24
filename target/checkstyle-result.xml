@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="6.18">
+<file name="/Users/davidnovogrodsky_wrk/Documents/github/JavaMasterClassOne/src/main/java/net/novogrodsky/Car.java">
+</file>
+<file name="/Users/davidnovogrodsky_wrk/Documents/github/JavaMasterClassOne/src/main/java/net/novogrodsky/Hello.java">
+<error line="27" severity="warning" message="Unicode escape(s) usage should be avoided." source="com.puppycrawl.tools.checkstyle.checks.AvoidEscapedUnicodeCharactersCheck"/>
+</file>
+</checkstyle>
